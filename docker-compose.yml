@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  ftps-legacy:
+    build:
+      context: ./ftps-legacy
+    container_name: ftps-legacy
+    restart: unless-stopped
+    ports:
+      - "2121:21"        
+      - "21100-21110:21100-21110" 
