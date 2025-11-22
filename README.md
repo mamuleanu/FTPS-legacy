@@ -4,6 +4,8 @@ This repository provides a minimal, reproducible setup demonstrating a TLS inter
 
 On Linux, .NET’s SslStream does not offer RSA key-exchange cipher suites by default. As a result, FluentFTP cannot complete the TLS handshake on these servers unless it exposes SslClientAuthenticationOptions and allows custom CipherSuitesPolicy.
 
+A PR was opened on FluentFTP: https://github.com/robinrodricks/FluentFTP/pull/1790
+
 This repository demonstrates:
 
 The FTPS server works with OpenSSL.
